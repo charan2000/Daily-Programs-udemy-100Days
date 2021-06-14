@@ -44,6 +44,8 @@ def validation(user,system):
             return "system wins"
         elif user == 1 and system == 3:
             return "You won"
+        elif (user == 1 and system == 1) or (user==2 and system==2) or (user==3 and system==3):
+            return "It's a Draw"
 
 print("Lets play Rock Paper Scissors:\n")
 print("Enter 1 for Rock; \nEnter 2 for Paper; \nEnter 3 for Scissors;")
@@ -52,3 +54,4 @@ comp_decison = random.randint(1,3)
 print("You Choose ",symbolforinput(user_value,game_picks))
 print("Computer Choose this: ",symbolforinput(comp_decison,game_picks))
 print(validation(user_value,comp_decison))
+ 
