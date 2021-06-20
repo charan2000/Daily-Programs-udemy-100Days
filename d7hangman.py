@@ -10,12 +10,13 @@ for i in choosen_word:
     display+="_"
 for i in choosen_word:
     input_letter = input("Enter a letter that might fit in the blanks: \n").lower()
+    
     if input_letter in choosen_word:
         user_word += input_letter
     else:
         print("Sry the letter u choose is not fit for the Word :(\n Try again \n")
 
-    
+
 
 
 
