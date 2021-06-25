@@ -8,6 +8,8 @@ user_word=""
 display=""
 for i in choosen_word:
     display+="_"
+
+
 for i in choosen_word:
     input_letter = input("Enter a letter that might fit in the blanks: \n").lower()
     
