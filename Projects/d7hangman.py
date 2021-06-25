@@ -1,28 +1,27 @@
 import random
 
 ## Creating a word list ##
-word_list = ["Berry","Jerry","Ferry","dragonfruit","mobile","laptop","building","jewellery","knowledge"]
+word_list = ["berry", "jerry", "ferry", "dragonfruit",
+             "mobile", "laptop", "building", "jewellery", "knowledge"]
 choosen_word = random.choice(word_list)
 print(choosen_word)
-user_word=""
-display=""
-for i in choosen_word:
-    display+="_"
+display = []
 
+for i in range(len(choosen_word)):
+    display += "_"
 
-for i in choosen_word:
-    input_letter = input("Enter a letter that might fit in the blanks: \n").lower()
-    
-    if input_letter in choosen_word:
-        user_word += input_letter
-    else:
-        print("Sry the letter u choose is not fit for the Word :(\n Try again \n")
+end_game = False
+while not end_game:
+    guess = input("Enter a letter: ").lower()
+    for i in range(len(choosen_word)):
+        input_letter = choosen_word[i]
+        if guess == input_letter:
+            display[i] = guess
+        else:
+            print("Wrong letter")
 
+    if "_" not in display:
+        end_game = True
+        print("You Won")
 
-
-
-
-if choosen_word == user_word:
-    print("You Won")
-else:print("You Lost")
-
+print(display)
