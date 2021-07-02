@@ -1,6 +1,6 @@
+import art
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
             'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-
 
 def decrypt(alphabet, text, shift):
     decrypted_word = ""
@@ -14,7 +14,6 @@ def decrypt(alphabet, text, shift):
         else:decrypted_word+=i
     return decrypted_word
 
-
 def encrypt(alphabet, text, shift):
     encrypted_word = ""
     for i in text:
@@ -27,10 +26,10 @@ def encrypt(alphabet, text, shift):
         else:encrypted_word+=i
     return encrypted_word
 
-
 #direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
 flag = True
 while flag:
+    print(art.logo)
     direction = input("Which direction of Cesar-Cipher: encrypt or decrypt: ").lower()
     text = input("Type your message:\n").lower()
     shift = int(input("Type the shift number:\n"))
