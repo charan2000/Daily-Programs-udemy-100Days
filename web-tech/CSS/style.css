@@ -10,13 +10,17 @@ body{
 }
 
 .middle-container{
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  height: 120px;
   background-color: Orange;
+  position: relative;
+  left: 140px;
 }
 
 .bottom-container{
-  width:200px;
-  height:200px;
+  width:120px;
+  height:120px;
   background-color: skyblue;
+  position: relative;
+  bottom: 140px;
 }
