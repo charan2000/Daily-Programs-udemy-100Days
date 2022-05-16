@@ -8,3 +8,7 @@ screen.addshape(image)
 turtle.shape(image)
 
 screen.exitonclick()
+dfs
+
+
+fs
