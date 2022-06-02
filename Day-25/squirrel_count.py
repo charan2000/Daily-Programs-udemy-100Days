@@ -3,6 +3,7 @@ import pandas as pd
 data = pd.read_csv("squirrel_data.csv")
 
 #print(data["Primary Fur Color"])
+
 print(data["Primary Fur Color"].unique())
 
 gray_squirrels = len(data[data["Primary Fur Color"] == "Gray"])
